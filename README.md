@@ -1,0 +1,2 @@
+# TwitterTrendAnalyzeSystem
+論文で使ったTwitterの分析システムです．

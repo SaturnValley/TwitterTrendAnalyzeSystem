@@ -3,6 +3,7 @@
 
 このプログラム群は，以下のような内容です．  
 実際に使用する場合は以下の順で実行してください．  
+  
 tweetTest.py（TwitterAPIを使用するための初期設定）  
 ↓  
 trendHistory.py（ツイッタートレンドを取得）  
@@ -10,6 +11,7 @@ trendHistory.py（ツイッタートレンドを取得）
 tweetToCSV.py（トレンドに関連するツイートを取得）  
 ↓  
 retweetClustering_GUI_img_html.py（分析可視化）  
+  
 また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
 
 ## 1.retweetClustering_GUI_img_html.py

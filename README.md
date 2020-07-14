@@ -1,9 +1,9 @@
 # TwitterTrendAnalyzeSystem
-## 論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです．
+論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです．  
 
-## このプログラム群は，以下のような内容です．  
-## 実際に使用する場合は以下の順で実行してください．  
-## また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
+このプログラム群は，以下のような内容です．  
+実際に使用する場合は以下の順で実行してください．  
+また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
 
 ## 1.retweetClustering_GUI_img_html.py
   分析・可視化システムの本体  

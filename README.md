@@ -3,13 +3,13 @@
 
 このプログラム群は，以下のような内容です．  
 実際に使用する場合は以下の順で実行してください．  
-tweetTest.py（TwitterAPIを使用するための初期設定）
-↓
-trendHistory.py（ツイッタートレンドを取得）
-↓
-tweetToCSV.py（トレンドに関連するツイートを取得）
-↓
-retweetClustering_GUI_img_html.py（分析可視化）
+tweetTest.py（TwitterAPIを使用するための初期設定）  
+↓  
+trendHistory.py（ツイッタートレンドを取得）  
+↓  
+tweetToCSV.py（トレンドに関連するツイートを取得）  
+↓  
+retweetClustering_GUI_img_html.py（分析可視化）  
 また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
 
 ## 1.retweetClustering_GUI_img_html.py
@@ -49,31 +49,31 @@ retweetClustering_GUI_img_html.py（分析可視化）
     * 画像数順
     
 ## 2. trendHistory.py
-    Twitterのトレンドのキーワードやクエリ，出現時間を取得し，CSV形式で保存する．  
-    保存場所のパスは"../data/trend_list.csv"  
-    実行すると，15分おきに日本のトレンドを取得できる．  
-    取得してから7日以上経過したトレンドは自動で削除される．  
-    日本以外のトレンドを取得する場合は，以下の行の（）内を変更する．  
+  Twitterのトレンドのキーワードやクエリ，出現時間を取得し，CSV形式で保存する．  
+  保存場所のパスは"../data/trend_list.csv"  
+  実行すると，15分おきに日本のトレンドを取得できる．  
+  取得してから7日以上経過したトレンドは自動で削除される．  
+  日本以外のトレンドを取得する場合は，以下の行の（）内を変更する．  
     51行目trends = api.trends_place(23424856)[0]["trends"]  
   
 ## 3. tweetTest.py
-    TwitterAPIを使用するときの初期設定を行う．  
-    Twitterに登録した以下の値を入力する  
+  TwitterAPIを使用するときの初期設定を行う．  
+  Twitterに登録した以下の値を入力する  
     CONSUMER_KEY="カスタマーキー"  
     CONSUMER_SECRET="カスタマーキーシークレット"  
     ACCESS_TOKEN="アクセストークン"  
     ACCESS_SECRET="アクセストークンシークレット"  
 
 ## 4. tweetToCSV.py
-    trendHistry.pyで保存したCSVをもとに，ツイートを取得する．  
-    32~34行目のname,query,timeに直接値を入れることで，通常のキーワード検索も可能．  
-    保存場所のパスは"../data/（トレンド名:変数nameに相当）.csv"  
-    画像は"../data/（トレンド名:変数nameに相当)/"に保存される．  
-    画像を含めて数GB程度になるので容量に注意．  
+  trendHistry.pyで保存したCSVをもとに，ツイートを取得する．  
+  32~34行目のname,query,timeに直接値を入れることで，通常のキーワード検索も可能．  
+  保存場所のパスは"../data/（トレンド名:変数nameに相当）.csv"  
+  画像は"../data/（トレンド名:変数nameに相当)/"に保存される．  
+  画像を含めて数GB程度になるので容量に注意．  
   
 ## 5. wordDetection.py
-    retweetClustering_GUI_img_html.pyで凡例抽出手法のBM25の実装のために必要．  
-    以下のGitHubで公開されているプログラムをそのまま利用している．  
-    "https://github.com/arosh/BM25Transformer/blob/master/bm25.py"  
+  retweetClustering_GUI_img_html.pyで凡例抽出手法のBM25の実装のために必要．  
+  以下のGitHubで公開されているプログラムをそのまま利用している．  
+  "https://github.com/arosh/BM25Transformer/blob/master/bm25.py"  
   
   

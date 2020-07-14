@@ -1,14 +1,22 @@
 # TwitterTrendAnalyzeSystem
-論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです．  
+自著の論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです．  
 
 このプログラム群は，以下のような内容です．  
 実際に使用する場合は以下の順で実行してください．  
+tweetTest.py（TwitterAPIを使用するための初期設定）
+↓
+trendHistory.py（ツイッタートレンドを取得）
+↓
+tweetToCSV.py（トレンドに関連するツイートを取得）
+↓
+retweetClustering_GUI_img_html.py（分析可視化）
 また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
 
 ## 1.retweetClustering_GUI_img_html.py
   分析・可視化システムの本体  
   収集したツイートを保存したCSVファイルを分析する  
   分析手法は[RetweetClustering](https://dl.acm.org/doi/10.1145/3106426.3106451)をもとにしており，可視化手法はThemeRiverを使用  
+  分析の途中結果を"../data/（トレンド名:変数nameに相当）/tweet_retweet.csv" に保存する．
   ### GUIの説明  
   ### * 分割数
     横軸（時間軸）の分割数を変更する．初期値は10，5~50範囲で変更可能．  

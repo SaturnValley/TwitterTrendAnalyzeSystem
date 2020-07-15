@@ -1,5 +1,5 @@
 # TwitterTrendAnalyzeSystem
-自著の論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです． 　
+自著の論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです． 　　　
 システムの目的は，ツイートの話題の時間による推移を短時間で把握することです．
 
 このプログラム群は，以下のような内容です．  

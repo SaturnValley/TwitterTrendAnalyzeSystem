@@ -1,5 +1,6 @@
 # TwitterTrendAnalyzeSystem
-自著の論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです．  
+自著の論文[Time-series Visualization of Twitter Trends](https://www.scitepress.org/Link.aspx?doi=10.5220/0008964802010208)で使った対話的Twitterの分析・可視化システムです． 　
+システムの目的は，ツイートの話題の時間による推移を短時間で把握することです．
 
 このプログラム群は，以下のような内容です．  
 実際に使用する場合は以下の順で実行してください．  
@@ -12,13 +13,22 @@ tweetToCSV.py（トレンドに関連するツイートを取得）
 ↓  
 retweetClustering_GUI_img_html.py（分析可視化）  
   
-また，Pythonのほかに形態素解析器MeCabと辞書のインストールが必要です．  
+また，Pythonのほかに形態素解析器MeCabのインストールとMeCab用辞書が必要です．  
 
 ## 1.retweetClustering_GUI_img_html.py
   分析・可視化システムの本体  
-  収集したツイートを保存したCSVファイルを分析する  
-  分析手法は[RetweetClustering](https://dl.acm.org/doi/10.1145/3106426.3106451)をもとにしており，可視化手法はThemeRiverを使用  
-  分析の途中結果を"../data/（トレンド名:変数nameに相当）/tweet_retweet.csv" に保存する．
+  収集したツイートを保存したCSVファイルを分析する．  
+  分析手法は[RetweetClustering](https://dl.acm.org/doi/10.1145/3106426.3106451)をもとにしており，可視化手法はThemeRiverを使用．  
+  分析の途中結果を"../data/（トレンド名:変数nameに相当）/tweet_retweet.csv" に保存する．　　
+  
+  ### 可視化結果の説明  
+  ### * 縦軸（ツイート数）
+    該当する時間におけるツイート数．正負に意味はなく，絶対値がツイート数を表す．
+  ### * 横軸（時間）
+    時間軸．ラベルが重ならないように一部省略されることもある．　　
+  ### * 色と凡例（話題）
+    グラフの各色と凡例がそれぞれ対応しており，1つの話題を表す．  
+
   ### GUIの説明  
   ### * 分割数
     横軸（時間軸）の分割数を変更する．初期値は10，5~50範囲で変更可能．  

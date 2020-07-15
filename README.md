@@ -71,10 +71,10 @@ retweetClustering_GUI_img_html.py（分析可視化）
 ## 3. tweetTest.py
   TwitterAPIを使用するときの初期設定を行う．  
   Twitterに登録した以下の値を入力する  
-    CONSUMER_KEY="カスタマーキー"  
-    CONSUMER_SECRET="カスタマーキーシークレット"  
-    ACCESS_TOKEN="アクセストークン"  
-    ACCESS_SECRET="アクセストークンシークレット"  
+      CONSUMER_KEY="カスタマーキー"  
+      CONSUMER_SECRET="カスタマーキーシークレット"  
+      ACCESS_TOKEN="アクセストークン"  
+      ACCESS_SECRET="アクセストークンシークレット"  
 
 ## 4. tweetToCSV.py
   trendHistry.pyで保存したCSVをもとに，ツイートを取得する．  
